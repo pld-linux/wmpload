@@ -9,6 +9,9 @@ Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.engr.utk.edu/~mdsmith/pload/%{name}-%{version}.tar.gz
 Source1:	wmpload.desktop
 URL:		http://www.engr.utk.edu/~mdsmith/pload/
+BuildRequires:	XFree86-devel
+BuildRequires:	xpm-devel
+Requires:	ppp
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define		_prefix		/usr/X11R6
