@@ -5,9 +5,10 @@ Version:	0.9.5
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.engr.utk.edu/~mdsmith/pload/%{name}-%{version}.tar.gz
-Source1:	wmpload.desktop
+Source1:	%{name}.desktop
 URL:		http://www.engr.utk.edu/~mdsmith/pload/
 BuildRequires:	XFree86-devel
 Requires:	ppp
@@ -18,24 +19,26 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 wmpload is an PPP monitor for Window Maker Dock. It can dislay totals
-and current rates for both inbound and outbound data. wmpload was designed
-to be portable to any platform that can run pppd and X11, but for Linux 2.2
-any network interface listed in /proc/net/dev can be also be monitored.
+and current rates for both inbound and outbound data. wmpload was
+designed to be portable to any platform that can run pppd and X11, but
+for Linux 2.2 any network interface listed in /proc/net/dev can be
+also be monitored.
 
 %description -l pl
 wmpload jest monitorem po³±czeñ PPP dla Doku Window Makera. Posiada
 mo¿liwo¶æ wy¶wietlania ca³o¶ciowych i aktualnych wielko¶ci transferów
-danych zarówno przychodz±cych jak i wychodz±cych. wmpload zosta³ 
-zaprojektowany w sposób umo¿liwiaj±cy u¿ywanie go na ka¿dej platformie,
-gdzie s± dostêpne X11 i pppd. Dodatkowo dla Linuksa 2.2 istnieje mozliwo¶æ
-monitorowania ka¿dego interfejsu sieciowego obecnego w /proc/net/dev.
+danych zarówno przychodz±cych jak i wychodz±cych. wmpload zosta³
+zaprojektowany w sposób umo¿liwiaj±cy u¿ywanie go na ka¿dej
+platformie, gdzie s± dostêpne X11 i pppd. Dodatkowo dla Linuksa 2.2
+istnieje mozliwo¶æ monitorowania ka¿dego interfejsu sieciowego
+obecnego w /proc/net/dev.
 
 %prep
 %setup -q
 
 %build
 ./configure
-%{__make} CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -46,8 +49,7 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	README CHANGES CREDITS
+gzip -9nf README CHANGES CREDITS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
