@@ -29,7 +29,7 @@ mo¿liwo¶æ wy¶wietlania ca³o¶ciowych i aktualnych wielko¶ci transferów
 danych zarówno przychodz±cych jak i wychodz±cych. wmpload zosta³
 zaprojektowany w sposób umo¿liwiaj±cy u¿ywanie go na ka¿dej
 platformie, gdzie s± dostêpne X11 i pppd. Dodatkowo dla Linuksa 2.2
-istnieje mozliwo¶æ monitorowania ka¿dego interfejsu sieciowego
+istnieje mo¿liwo¶æ monitorowania ka¿dego interfejsu sieciowego
 obecnego w /proc/net/dev.
 
 %prep
