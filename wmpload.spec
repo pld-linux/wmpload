@@ -36,13 +36,13 @@ monitorowania ka¿dego interfejsu sieciowego obecnego w /proc/net/dev.
 
 %build
 ./configure
-make CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-make install install.man \
+%{__make} install install.man \
 	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
