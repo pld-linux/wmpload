@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=wmPload
+Name=WmPload
 Comment=PPP network monitor for Window Maker Dock
 Comment[pl]=Monitor połączeń PPP dla Doku Window Makera
 Exec=wmpload
