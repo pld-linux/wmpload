@@ -5,8 +5,6 @@ Version:	0.9.5
 Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.engr.utk.edu/~mdsmith/pload/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-distclean.patch
