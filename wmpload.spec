@@ -14,8 +14,6 @@ BuildRequires:	XFree86-devel
 Requires:	ppp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 wmpload is an PPP monitor for Window Maker Dock. It can dislay totals
