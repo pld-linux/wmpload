@@ -58,4 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGES CREDITS
 %attr(755,root,root) %{_bindir}/wmpload
 %{_mandir}/man1/wmpload.1x*
-#%{_applnkdir}/DockApplets/wmpload.desktop
+#%%{_applnkdir}/DockApplets/wmpload.desktop
