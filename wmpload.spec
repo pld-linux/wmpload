@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.engr.utk.edu/~mdsmith/pload/%{name}-%{version}.tar.gz
+# Source0-md5:	022fb510f586ea38cdd5e829a25464bf
 Source1:	%{name}.desktop
 Patch0:		%{name}-distclean.patch
 URL:		http://www.engr.utk.edu/~mdsmith/pload/
