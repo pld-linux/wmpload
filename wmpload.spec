@@ -10,7 +10,6 @@ Source0:	http://www.engr.utk.edu/~mdsmith/pload/%{name}-%{version}.tar.gz
 Source1:	wmpload.desktop
 URL:		http://www.engr.utk.edu/~mdsmith/pload/
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 Requires:	ppp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
