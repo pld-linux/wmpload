@@ -39,7 +39,7 @@ obecnego w /proc/net/dev.
 %patch0 -p1
 
 %build
-%configure
+./configure
 xmkmf -a
 %{__make} CDEBUGFLAGS="%{rpmcflags} -DLINUXPROC"
 
