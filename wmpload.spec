@@ -50,14 +50,13 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-gzip -9nf README CHANGES CREDITS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README CHANGES CREDITS
 %attr(755,root,root) %{_bindir}/wmpload
 
 %{_mandir}/man1/wmpload.1x.gz
