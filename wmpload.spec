@@ -12,11 +12,10 @@ URL:		http://www.engr.utk.edu/~mdsmith/pload/
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
 Requires:	ppp
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 wmpload is an PPP monitor for Window Maker Dock. It can dislay totals
