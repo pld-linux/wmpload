@@ -1,0 +1,15 @@
+--- wmpload-0.9.5/Imakefile~	Wed Dec  5 07:50:40 2001
++++ wmpload-0.9.5/Imakefile	Wed Dec  5 07:50:40 2001
+@@ -13,12 +13,6 @@
+ 
+ ComplexProgramTarget(wmpload)
+ 
+-distclean: clean	
+-	$(RM) Makefile osdefs.mk core \
+-	wmpload-$(VER).tar.gz \
+-	wmpload-$(VER)-1.i386.rpm \
+-	wmpload-$(VER)-1.src.rpm
+-
+ tgz:	
+ 	rm -rf wmpload-$(VER)
+ 	mkdir wmpload-$(VER)
