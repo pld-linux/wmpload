@@ -2,13 +2,14 @@ Summary:	PPP network monitor for Window Maker Dock
 Summary(pl):	Monitor po³±czeñ ppp dla Doku Window Makera 
 Name:		wmpload 
 Version:	0.9.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.engr.utk.edu/~mdsmith/pload/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Patch0:		%{name}-distclean.patch
 URL:		http://www.engr.utk.edu/~mdsmith/pload/
 BuildRequires:	XFree86-devel
 Requires:	ppp
@@ -35,10 +36,12 @@ obecnego w /proc/net/dev.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 ./configure
-%{__make} CDEBUGFLAGS="%{rpmcflags}"
+xmkmf -a
+%{__make} CDEBUGFLAGS="%{rpmcflags} -DLINUXPROC"
 
 %install
 rm -rf $RPM_BUILD_ROOT
