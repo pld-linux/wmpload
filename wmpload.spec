@@ -2,7 +2,7 @@ Summary:	PPP network monitor for Window Maker Dock
 Summary(pl):	Monitor po³±czeñ ppp dla Doku Window Makera
 Name:		wmpload
 Version:	0.9.5
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.engr.utk.edu/~mdsmith/pload/%{name}-%{version}.tar.gz
@@ -42,13 +42,12 @@ xmkmf -a
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets \
+install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets \
 	$RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}.man $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1x
-
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGES CREDITS
 %attr(755,root,root) %{_bindir}/wmpload
 %{_mandir}/man1/wmpload.1x*
-#%%{_applnkdir}/DockApplets/wmpload.desktop
+%{_desktopdir}/docklets/wmpload.desktop
