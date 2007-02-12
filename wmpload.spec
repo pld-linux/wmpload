@@ -1,5 +1,5 @@
 Summary:	PPP network monitor for Window Maker Dock
-Summary(pl.UTF-8):   Monitor połączeń ppp dla Doku Window Makera
+Summary(pl.UTF-8):	Monitor połączeń ppp dla Doku Window Makera
 Name:		wmpload
 Version:	0.9.5
 Release:	3
