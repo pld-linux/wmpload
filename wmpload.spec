@@ -1,5 +1,5 @@
 Summary:	PPP network monitor for Window Maker Dock
-Summary(pl):	Monitor po³±czeñ ppp dla Doku Window Makera
+Summary(pl.UTF-8):   Monitor poÅ‚Ä…czeÅ„ ppp dla Doku Window Makera
 Name:		wmpload
 Version:	0.9.5
 Release:	3
@@ -22,13 +22,13 @@ designed to be portable to any platform that can run pppd and X11, but
 for Linux 2.2 any network interface listed in /proc/net/dev can be
 also be monitored.
 
-%description -l pl
-wmpload jest monitorem po³±czeñ PPP dla Doku Window Makera. Posiada
-mo¿liwo¶æ wy¶wietlania ca³o¶ciowych i aktualnych wielko¶ci transferów
-danych zarówno przychodz±cych jak i wychodz±cych. wmpload zosta³
-zaprojektowany w sposób umo¿liwiaj±cy u¿ywanie go na ka¿dej
-platformie, gdzie s± dostêpne X11 i pppd. Dodatkowo dla Linuksa 2.2
-istnieje mo¿liwo¶æ monitorowania ka¿dego interfejsu sieciowego
+%description -l pl.UTF-8
+wmpload jest monitorem poÅ‚Ä…czeÅ„ PPP dla Doku Window Makera. Posiada
+moÅ¼liwoÅ›Ä‡ wyÅ›wietlania caÅ‚oÅ›ciowych i aktualnych wielkoÅ›ci transferÃ³w
+danych zarÃ³wno przychodzÄ…cych jak i wychodzÄ…cych. wmpload zostaÅ‚
+zaprojektowany w sposÃ³b umoÅ¼liwiajÄ…cy uÅ¼ywanie go na kaÅ¼dej
+platformie, gdzie sÄ… dostÄ™pne X11 i pppd. Dodatkowo dla Linuksa 2.2
+istnieje moÅ¼liwoÅ›Ä‡ monitorowania kaÅ¼dego interfejsu sieciowego
 obecnego w /proc/net/dev.
 
 %prep
