@@ -33,7 +33,7 @@ obecnego w /proc/net/dev.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 ./configure
